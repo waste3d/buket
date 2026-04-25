@@ -9,7 +9,7 @@ export default function BouquetSBLanding() {
         <div className="flex gap-8">
           <span className="flex items-center gap-2">
             <div className="w-1 h-1 bg-rose-400 rounded-full animate-pulse" /> 
-            Доставка по Сосновому Бору от 60 минут
+            Доставка по Сосновому Бору от 30 минут
           </span>
         </div>
         <div className="hidden md:flex gap-6 italic">
@@ -39,8 +39,8 @@ export default function BouquetSBLanding() {
           </div>
 
           <div className="flex-1 flex justify-end items-center gap-4">
-            <a href="tel:+79110949436" className="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:text-rose-500 transition">
-              <Phone size={14} /> +7 (911) 094 94 36
+            <a href="tel:+79112655690" className="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:text-rose-500 transition">
+              <Phone size={14} /> +7 (911) 265 56 90
             </a>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function BouquetSBLanding() {
                 радость
                 <div className="absolute -right-16 top-0 text-rose-200 hidden md:block"><Sparkles size={60} /></div>
               </span> <br />
-              легко
+              это просто
             </h2>
             <div className="flex flex-col sm:flex-row gap-10 items-start sm:items-center">
               <a href="#catalog" className="group relative bg-[#1A1A1A] text-white px-14 py-6 text-[10px] uppercase tracking-[0.4em] font-bold transition-all hover:bg-black active:scale-95">
@@ -86,37 +86,73 @@ export default function BouquetSBLanding() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <CategoryCard title="Nude" subtitle="Моно-букеты" color="bg-[#F9F1EF]" textColor="text-[#A6867E]" />
-            <CategoryCard title="Verde" subtitle="Зелень и декор" color="bg-[#EDF2F0]" textColor="text-[#7E968E]" />
-            <CategoryCard title="Rose" subtitle="Авторские сеты" color="bg-[#FAEDF0]" textColor="text-[#967E84]" />
-            <CategoryCard title="Night" subtitle="Композиции" color="bg-[#F2F2F2]" textColor="text-[#888888]" />
+            <CategoryCard title="Нюд" subtitle="Моно-букеты" color="bg-[#F9F1EF]" textColor="text-[#fffff]" img="/mono.jpg" />
+            <CategoryCard title="Роса" subtitle="Букеты из гипсофилы" color="bg-[#EDF2F0]" textColor="text-[#7E968E]" img="/gips.jpg" />
+            <CategoryCard title="Роза" subtitle="Авторские букеты" color="bg-[#FAEDF0]" textColor="text-[#967E84]" img="/author.jpg"/>
+            <CategoryCard title="Рассвет" subtitle="Композиции" color="bg-[#F2F2F2]" textColor="text-[#888888]" img="/compose.jpg" />
           </div>
         </div>
       </section>
 
       {/* 5. ПАВИЛЬОНЫ (АДРЕСА) */}
       <section id="pavilions" className="py-32 px-6 bg-[#FCF9F7]">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div>
-              <h3 className="text-5xl font-serif mb-10 leading-tight">Мы всегда <br /><span className="italic text-rose-400">рядом с вами</span></h3>
-              <div className="space-y-10">
-                <LocationItem address="ул. Красных Фортов, 26" workTime="Круглосуточно" phone="+7 (911) 094 94 36" isMain />
-                <LocationItem address="пр. Героев, 74 " workTime="09:00 — 21:00" phone="+7 (911) 000 00 00" />
-                <LocationItem address="ул. Молодежная, 6" workTime="09:00 — 22:00" phone="+7 (911) 000 00 00" />
-                <LocationItem address="ул. Петра Великого, 12" workTime="09:00 — 20:00" phone="+7 (911) 000 00 00" />
-              </div>
-            </div>
-            <div className="bg-rose-100/30 h-[600px] rounded-t-full rounded-b-3xl border border-rose-100 flex items-center justify-center relative overflow-hidden">
-                <MapPin size={80} className="text-rose-200" strokeWidth={0.5} />
-                <div className="absolute bottom-10 left-10 right-10 bg-white p-6 rounded-2xl shadow-xl">
-                  <p className="text-[10px] uppercase tracking-widest font-bold mb-2 text-rose-500">Центральный офис</p>
-                  <p className="text-sm font-serif italic">г. Сосновый Бор, ул. Красных Фортов, 26</p>
-                </div>
-            </div>
-          </div>
+  <div className="max-w-[1440px] mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <div>
+        <h3 className="text-5xl font-serif mb-10 leading-tight">
+          Мы всегда <br />
+          <span className="italic text-rose-400">рядом с вами</span>
+        </h3>
+        <div className="space-y-10">
+          <LocationItem 
+            address="ул. Красных Фортов, 26" 
+            workTime="Круглосуточно" 
+            phone="+7 (911) 265 56 90" 
+            isMain 
+          />
+          <LocationItem 
+            address="ул. Сибирская, 7" 
+            workTime="08:00 — 21:00" 
+            phone="+7 (981) 286 21 85" 
+          />
+          <LocationItem 
+            address="ул. Молодежная, 6" 
+            workTime="08:00 — 22:00" 
+            phone="+7 (911) 716 68 63" 
+          />
+          <LocationItem 
+            address="пр. Героев, 74" 
+            workTime="08:00 — 21:00" 
+            phone="+7 (981) 755 29 71" 
+          />
         </div>
-      </section>
+      </div>
+
+      {/* КАРТА */}
+      <div className="relative h-[600px] rounded-t-[200px] rounded-b-3xl border border-rose-100 overflow-hidden shadow-2xl group">
+        <iframe 
+src="https://yandex.ru/map-widget/v1/?ll=29.095390%2C59.910672&z=16&l=map&pt=29.095390%2C59.910672%2Cpm2rdm"   
+ className="w-full h-full grayscale-[0.3] contrast-[0.9] transition-all duration-700 group-hover:grayscale-0 group-hover:contrast-100"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+        ></iframe>
+
+        {/* Плашка поверх карты */}
+        <div className="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-rose-50 transform transition-transform duration-500 group-hover:-translate-y-2">
+          <div className="flex items-center gap-3 mb-2">
+            <p className="text-[10px] uppercase tracking-widest font-bold text-rose-500">
+              Большой выбор цветов
+            </p>
+          </div>
+          <p className="text-sm font-serif italic text-[#1A1A1A]">
+            г. Сосновый Бор, ул. Молодежная, 6
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* 6. КЛИЕНТАМ (ИНФОРМАЦИЯ) */}
       <section id="clients" className="py-32 px-6 bg-white border-y border-rose-50">
@@ -136,7 +172,7 @@ export default function BouquetSBLanding() {
             />
             <InfoBlock 
               title="Гарантия качества" 
-              items={['Фото букета перед отправкой', 'Замена, если цветы несвежие', 'Инструкция по уходу в комплекте']}
+              items={['Фото букета перед отправкой (по запросу)', 'Больше 20 лет на рынке', 'Инструкция по уходу в комплекте']}
             />
           </div>
         </div>
@@ -148,7 +184,7 @@ export default function BouquetSBLanding() {
           <div>
             <h4 className="text-2xl font-serif tracking-widest uppercase mb-8">Букет-СБ</h4>
             <p className="text-[11px] text-white/40 leading-relaxed uppercase tracking-[0.2em]">
-              Ваш персональный цветочный <br /> бюро в Сосновом Бору.
+              Ваш персональный цветочный <br /> магазин в Сосновом Бору.
             </p>
           </div>
           <FooterNav title="Разделы" links={[
@@ -159,23 +195,23 @@ export default function BouquetSBLanding() {
           <FooterNav title="Цветы" links={[
             {n: 'Розы', h: '#catalog'}, 
             {n: 'Пионы', h: '#catalog'}, 
-            {n: 'Авторские сеты', h: '#catalog'}
+            {n: 'Авторские букеты', h: '#catalog'}
           ]} />
           <div>
             <h5 className="text-[10px] uppercase tracking-[0.4em] mb-8 text-rose-400 font-bold">Связь</h5>
-            <p className="text-xl font-light mb-6">+7 (911) 094 94 36</p>
+            <p className="text-xl font-light mb-6">+7 (911) 265 56 90</p>
             <div className="space-y-4">
               <p className="text-[10px] text-white/40 uppercase tracking-widest flex items-center gap-3">
                 <MapPin size={14} className="text-rose-500" /> Сосновый Бор, ул. Красных Фортов, 26
               </p>
               <p className="text-[10px] text-white/40 uppercase tracking-widest flex items-center gap-3">
-                <Clock size={14} className="text-rose-500" /> Ежедневно 08:00 — 22:00
+                <Clock size={14} className="text-rose-500" /> 24/7
               </p>
             </div>
           </div>
         </div>
         <div className="max-w-[1440px] mx-auto mt-12 flex justify-between items-center text-[8px] uppercase tracking-[0.5em] text-white/20 font-bold">
-          <span>© 2024 BOUQUET-SB BUREAU</span>
+          <span>© 2026 Букет-СБ</span>
           <span>Sbor Flower Network</span>
         </div>
       </footer>
@@ -185,19 +221,22 @@ export default function BouquetSBLanding() {
 
 // Вспомогательные компоненты
 
-function CategoryCard({ title, subtitle, color, textColor }: any) {
+function CategoryCard({ title, subtitle, color, textColor, img }: any) {
   return (
-    <div className={`${color} h-[400px] p-10 flex flex-col justify-between group cursor-pointer transition-all duration-700 hover:shadow-2xl relative overflow-hidden`}>
+    <div className="relative h-[450px] p-10 flex flex-col justify-between group cursor-pointer overflow-hidden">
+      <img src={img} className="absolute inset-0 w-full h-full object-cover" />
+      
+      {/* Градиентная подложка специально под текст */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/60 opacity-80"></div>
+
       <div className="z-10">
-        <span className={`text-[9px] uppercase tracking-[0.4em] ${textColor} font-bold opacity-60`}>{subtitle}</span>
-        <h3 className={`text-4xl font-serif mt-4 ${textColor} group-hover:translate-x-2 transition-transform duration-500`}>{title}</h3>
+        <p className="text-[10px] uppercase tracking-[0.4em] text-black/50 font-black mb-2">{subtitle}</p>
+        <h3 className="text-6xl font-serif text-green-900">{title}</h3>
       </div>
-      <div className="z-10 flex items-center gap-4 text-[9px] uppercase tracking-[0.3em] font-bold group-hover:gap-6 transition-all duration-500">
-        Смотреть <ArrowRight size={14} />
-      </div>
-      <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity">
-        <Flower2 size={200} strokeWidth={0.5} />
-      </div>
+
+      <button className="z-10 text-[10px] uppercase tracking-[0.4em] font-bold text-black flex items-center gap-3">
+        Смотреть <div className="w-8 h-[1px] bg-black group-hover:w-12 transition-all"></div>
+      </button>
     </div>
   );
 }
